@@ -27,7 +27,7 @@ def connect_to_nasa(last_update_date):
 
 def create_df(response):
     all_objects = []
-    for date, objects in response["near_earth_objects"]..items():
+    for date, objects in response["near_earth_objects"].items():
         for obj in objects:
             obj["close_approach_date"] = date
             all_objects.append(obj)
@@ -73,13 +73,13 @@ def update_new_data(df, es, last_update_date, index_name):
     else:
         logging.info("The DataFrame is empty or None.")
 
-@app.timer_trigger(schedule="0 0 12 * * *", arg_name="myTimer", run_on_startup=False, use_monitor=False)
+@app.timer_trigger(schedule="0 30 9 * * *", arg_name="myTimer", run_on_startup=False, use_monitor=False)
 def main(myTimer: func.TimerRequest) -> None:
     if myTimer.past_due:
         logging.info('The timer is past due!')
     logging.info('Python timer trigger function started execution.')
 
-    index_name = "asteroid_data_set"
+    index_name = "python-azure-asteroid"
     es = connect_to_elastic()
     last_update_date = updated_last(es, index_name)
     response = connect_to_nasa(last_update_date)
