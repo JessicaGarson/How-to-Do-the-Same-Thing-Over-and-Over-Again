@@ -55,7 +55,7 @@ def doc_generator(df, index_name):
     for index, document in df.iterrows():
         yield {
             "_index": index_name,
-            "_id": f"{document['close_approach_date']}",
+            "_id": f"{document['id']}",
             "_source": document.to_dict(),
         }
 
