@@ -8,8 +8,8 @@ def parse_sunset_time(sunset_time_str):
 def get_sunset_time():
     url = "https://api.sunrisesunset.io/json"
     params = {
-        'lat': 40.7128,  # Latitude for NYC
-        'lng': -74.0060, # Longitude for NYC
+        'lat': 40.7128,
+        'lng': -74.0060,
         'timezone': "America/New_York"
     }
     response = requests.get(url, params=params)
