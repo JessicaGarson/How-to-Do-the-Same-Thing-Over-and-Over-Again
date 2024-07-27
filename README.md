@@ -1,4 +1,4 @@
-# How to Do the Same Thing Over and Over Again and Yield Differnt Results
+# How to Do the Same Thing Over and Over Again and Yield Different Results
 Code from a talk outlining strategies for automating routine processes while ensuring that the outcomes adapt to changing requirements, enhancing project innovation and data accuracy.
 
 ## Render cron job example
