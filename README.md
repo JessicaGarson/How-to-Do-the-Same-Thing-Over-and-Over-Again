@@ -148,3 +148,4 @@ The Elasticsearch queries run during this talk can be found [here](https://githu
 - [Using cron and rate expressions to schedule rules in Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduled-rule-pattern.html)
 - [Lambda Python package](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
 - [Automation using Cron Jobs: From Basics to Advanced](https://dev.to/devrx/automation-using-cron-jobs-from-basics-to-advanced-4e69)
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com)
