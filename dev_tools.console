@@ -1,0 +1,42 @@
+GET /asteroid_data_set/_search
+{
+  "sort": [
+    {
+      "close_approach_date": {
+        "order": "desc"
+      }
+    }
+  ],
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET /python-azure-asteroid/_search
+{
+  "sort": [
+    {
+      "close_approach_date": {
+        "order": "desc"
+      }
+    }
+  ],
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+GET /python-aws/_search
+{
+  "sort": [
+    {
+      "close_approach_date": {
+        "order": "desc"
+      }
+    }
+  ],
+  "query": {
+    "match_all": {}
+  }
+}
