@@ -31,6 +31,11 @@ Set the following environment variables in Render:
 ### Usage
 Once deployed, the script runs and checks the current sunset time daily, sending a notification an hour before sunset. Ensure the script is scheduled to run at least once a day at a time that precedes the earliest sunset time of the year.
 
+### Cron syntax used
+```
+0 18 * * *
+``` 
+
 ## Function examples
 ### GCP Function
 This Google Cloud Function retrieves data on near-earth objects from NASA's API and updates an Elasticsearch index with the new data. It's triggered by messages on a Google Cloud Pub/Sub topic, making it well-suited for regular updates based on streaming data or periodic events.
@@ -55,6 +60,11 @@ To deploy this function to Google Cloud Functions:
 2. **Deploy the function:**
 3. **Schedule using Google Cloud Schedular**
 
+#### Cron syntax used
+```
+0 8 * * * (America/New_York)
+```
+
 ### Azure Function App
 This Azure Function is designed to regularly fetch and update data from NASA's Near Earth Object (NEO) API into an Elasticsearch index. The function is triggered by a timer, making it suitable for periodic updates to keep the index current with the latest data.
 
@@ -74,6 +84,11 @@ Set the following environment variables for your Azure and Elasticsearch configu
 
 #### Deployment
 Deploy this function to Azure Functions using the Azure Visual Studio code extension.
+
+#### Cron syntax used
+```
+0 30 9 * * *
+```
 
 ### AWS Lambda function
 This AWS Lambda function retrieves data on near-earth objects from NASA's API, updates an Elasticsearch index with the new data, and logs the results. It is designed to run periodically to keep the Elasticsearch index updated with the latest data about near-earth objects.
@@ -100,6 +115,11 @@ Zip the necessary files including the dependencies.
 Use the AWS Management Console, AWS CLI, or your preferred infrastructure as code tool (like Terraform or AWS SAM) to deploy the function.
 3. **Set a trigger:**
 Configure a schedule to run this Lambda function periodically (e.g., daily using AWS CloudWatch).
+
+#### Cron syntax used
+```
+0 10 * * ? *
+```
 
 ## Operational testing 
 You can find a notebook for creating an index and testing locally on [Elastic's Search Labs repository](https://github.com/elastic/elasticsearch-labs/blob/main/supporting-blog-content/keeping-your-index-current/local_testing.ipynb).
