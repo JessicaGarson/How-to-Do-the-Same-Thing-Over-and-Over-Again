@@ -106,3 +106,25 @@ You can find a notebook for creating an index and testing locally on [Elastic's 
 
 ## Elasticsearch queries
 The Elasticsearch queries run during this talk can be found [here](https://github.com/JessicaGarson/How-to-Do-the-Same-Thing-Over-and-Over-Again/blob/main/dev_tools.console).
+
+## Resources
+- [What is an Elasticsearch index?](https://www.elastic.co/blog/what-is-an-elasticsearch-index)
+- [What Is a Cron Job: Understanding Cron Syntax and How to Configure Cron Jobs](https://www.hostinger.com/tutorials/cron-job)
+- [Asteroids NeoWs API](https://data.nasa.gov/Space-Science/Asteroids-NeoWs-API/73uw-d9i8/about_data)
+- [NASA API Overview](https://wilsjame.github.io/how-to-nasa/)
+- [Downloading Python](https://wiki.python.org/moin/BeginnersGuide/Download)
+- [NASA APIs](https://api.nasa.gov/)
+- [Getting started with Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html)
+- [Render cron jobs](https://docs.render.com/cronjobs)
+- [Google Cloud Functions](https://cloud.google.com/functions?hl=en)
+- [Crontab.guru](https://crontab.guru/)
+- [Google Cloud Scheduler](https://cloud.google.com/scheduler)
+- [PyEnv](https://github.com/pyenv/pyenv)
+- [Develop Azure Functions by using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v4%2Cpython-v2)
+- [Azure Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview?pivots=programming-language-python)
+- [AWS Lambda](https://aws.amazon.com/lambda/)
+- [AWS Eventbridge](https://aws.amazon.com/eventbridge/)
+- [AWS S3](https://aws.amazon.com/s3/)
+- [Using cron and rate expressions to schedule rules in Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduled-rule-pattern.html)
+- [Lambda Python package](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
+- [Automation using Cron Jobs: From Basics to Advanced](https://dev.to/devrx/automation-using-cron-jobs-from-basics-to-advanced-4e69)
