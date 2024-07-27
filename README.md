@@ -137,6 +137,8 @@ The Elasticsearch queries run during this talk can be found [here](https://githu
 - [Getting started with Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html)
 - [Render cron jobs](https://docs.render.com/cronjobs)
 - [Google Cloud Functions](https://cloud.google.com/functions?hl=en)
+- [How I solved my parking problem with Python](https://youtu.be/pgDu37WtDhk)
+- [Making music with Python - PyOhio](https://www.youtube.com/watch?v=OTQTS5aKh7s)
 - [Crontab.guru](https://crontab.guru/)
 - [Google Cloud Scheduler](https://cloud.google.com/scheduler)
 - [PyEnv](https://github.com/pyenv/pyenv)
