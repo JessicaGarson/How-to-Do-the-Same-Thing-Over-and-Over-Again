@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     logging.basicConfig(level=logging.INFO)
     logging.info('Lambda function execution started.')
 
-    index_name = "python-lamda-asteroid"
+    index_name = "python-aws"
     es = connect_to_elastic()
     last_update_date = updated_last(es, index_name)
     response = connect_to_nasa(last_update_date)
@@ -46,8 +46,8 @@ def create_df(response):
             obj["close_approach_date"] = date
             all_objects.append(obj)
     df = pd.json_normalize(all_objects)
-    df.drop("close_approach_data", axis=1, inplace=True)
-    if df.isnull().values.any():
+    df.drop(["close_approach_data", "links.self"], axis=1)
+    if df.isnull().values.any() == True:
         df.fillna(0, inplace=True)
     return df
 
